@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import FAB from "./components/FAB";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -16,13 +17,11 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.textHuge}>{count}</Text>
 
-      <Pressable
-        style={styles.floatingButton}
+      <FAB
+        label="+1"
         onPress={() => setCount(count + 1)}
         onLongPress={() => setCount(0)}
-      >
-        <Text style={styles.textButton}>+1</Text>
-      </Pressable>
+      />
 
       <TouchableOpacity>
         <Text>+1</Text>
