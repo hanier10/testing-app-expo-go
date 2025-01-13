@@ -21,6 +21,7 @@ export default function App() {
         label="+1"
         onPress={() => setCount(count + 1)}
         onLongPress={() => setCount(0)}
+        position="right"
       />
 
       <TouchableOpacity>
