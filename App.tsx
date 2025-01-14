@@ -24,6 +24,13 @@ export default function App() {
         position="right"
       />
 
+      <FAB
+        label="+1"
+        onPress={() => setCount(count + 1)}
+        onLongPress={() => setCount(0)}
+        position="left"
+      />
+
       <TouchableOpacity>
         <Text>+1</Text>
       </TouchableOpacity>
